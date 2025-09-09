@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Us - CRYSTAL DETAILING</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS to ensure the video covers the entire background */
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            background-size: cover;
+        }
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="font-sans text-white relative flex flex-col items-center justify-center min-h-screen">
+
+    <!-- The background video element -->
+    <video autoplay muted loop id="video-background" class="w-full h-full object-cover">
+        <source src="https://raw.githubusercontent.com/CrystalDetailing/dalal/main/3066461-uhd_4096_2160_24fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay to make the content stand out better -->
+    <div class="video-overlay"></div>
+
+    <!-- Main content container -->
+    <div class="z-10 p-8 rounded-lg max-w-4xl mx-auto text-center backdrop-blur-sm bg-black bg-opacity-30">
+        
+        <!-- Logo Image -->
+        <!-- Important: Upload your logo to your GitHub repository and use its raw URL here. -->
+        <img src="https://placehold.co/400x150/000000/FFFFFF?text=CRYSTAL+DETAILING+LOGO" alt="Crystal Detailing Logo" class="mx-auto mb-6 w-72 h-auto">
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+            Why Us
+        </h1>
+        <div class="text-left text-lg md:text-xl leading-relaxed">
+            <p class="mb-4 font-bold">Why Choose Crystal Detailings?</p>
+            <p class="mb-4">
+                At Crystal Detailings, we believe that car care is more than just a service—it's an art. Located right here in Palwal, we’re dedicated to providing your vehicle with the meticulous attention it deserves. While many places offer car washes, we offer a complete transformation. Here’s why we stand out:
+            </p>
+            <p class="mb-4 font-bold">Expertise and Precision</p>
+            <p class="mb-4">
+                Our team consists of trained professionals who are passionate about car detailing. We use industry-leading techniques and have a keen eye for detail, ensuring every inch of your car, from the paint to the interior, is handled with the utmost care. We don't just clean; we restore and protect.
+            </p>
+            <p class="mb-4 font-bold">Quality You Can See</p>
+            <p class="mb-4">
+                We never compromise on quality. We use only premium-grade products that are safe for your car and deliver exceptional, long-lasting results. Our goal is to make your vehicle look better than it did the day you bought it, and our commitment to using the best materials is how we achieve that.
+            </p>
+            <p class="mb-4 font-bold">A Personalized Experience</p>
+            <p class="mb-4">
+                We understand that every car and every owner is unique. Whether you’re looking for a quick interior refresh or a full-scale paint correction, we’ll work with you to understand your needs and recommend the perfect service. We're not just a business; we're your partners in car care.
+            </p>
+            <p class="mb-4">
+                Choose Crystal Detailings and experience the difference that passion, precision, and quality make. Your car will thank you for it.
+            </p>
+        </div>
+        
+    </div>
+
+    <!-- Navigation buttons at the bottom of the page -->
+    <nav class="z-10 mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
+        <!-- Home Button -->
+        <a href="index.html" class="flex items-center space-x-2 py-3 px-6 rounded-full border border-white text-white hover:bg-white/20 transition-colors duration-300">
+            <!-- Home Symbol (House) -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+            </svg>
+            <span>Home</span>
+        </a>
+        <!-- About Us Button -->
+        <a href="about.html" class="flex items-center space-x-2 py-3 px-6 rounded-full border border-white text-white hover:bg-white/20 transition-colors duration-300">
+            <!-- About Us Symbol (Person) -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+            </svg>
+            <span>About Us</span>
+        </a>
+        <!-- Contact Us Button -->
+        <button class="flex items-center space-x-2 py-3 px-6 rounded-full border border-white text-white hover:bg-white/20 transition-colors duration-300">
+            <!-- Contact Us Symbol (Envelope) -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+            <span>Contact Us</span>
+        </button>
+    </nav>
+</body>
+</html>
